@@ -3,9 +3,9 @@ var express = require('express'),
 	request = require ('request'),
 	bodyParser = require('body-parser'),
 	twilio = require('twilio'),
-	cloudBit = require('littlebits-cloud-http').defaults({ access_token: '8b7ec3855893e311a375b2f802d11d25d734af45b4ca80e98cf8ad7389cae353' });
+	cloudBit = require('littlebits-cloud-http').defaults({ access_token: 'YOURACCESSTOKEN' });
 	
-cloudBit = cloudBit.defaults({ device_id: '243c200ccfc0' })
+cloudBit = cloudBit.defaults({ device_id: 'YOURDEVICEID' })
 	
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
